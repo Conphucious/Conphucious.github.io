@@ -454,11 +454,15 @@ b i:last-child {
 
 .mouse {
     position: absolute;
-   /* width: 22px; */
+    width: 22px;
     height: 42px;
     bottom: 40px;
     left: 50%;
     margin-left: -12px;
+    border-radius: 15px;
+    border: 2px solid #888;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
 }
 
 .scroll {
