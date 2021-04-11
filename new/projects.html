@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/portfolio.css" />
   <script src="js/jquery-2.1.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/custom.js"></script>
 
@@ -21,8 +20,8 @@
         <div class="trigger">
           <a class="page-link" href="index.html">Homepage</a>
           <a class="page-link" href="projects.html">Projects</a>
-          <a class="page-link" href="about.html">Experience</a>
-          <a class="page-link" href="contact.html">Contact Me</a>
+          <a class="page-link" href="cad-designs.html">CAD Designs</a>
+          <a class="page-link" href="contact.html">Contact</a>
         </div>
       </nav>
     </div>
@@ -30,69 +29,63 @@
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
-      <article class="post">
-        <header class="post-header">
-          <h1 class="post-title">Projects</h1>
-        </header>
+      <header class="post-header">
+        <h1 class="post-title">Projects</h1>
+      </header>
 
-        <div class="post-content">
-          <!-- Portfolio Filter -->
-          <div class="portfolio">
-            <div class="categories-grid wow fadeInLeft">
-              <nav class="categories text-center">
-                <ul class="portfolio_filter">
-                  <li><a href="" class="active" data-filter="*">All</a></li>
-                  <li><a href="" data-filter=".hobby">Hobby</a></li>
-                  <li><a href="" data-filter=".professional">Professional</a></li>
-                  <li><a href="" data-filter=".software">Software</a></li>
-                  <li><a href="" data-filter=".hardware">Hardware</a></li>
-                </ul>
-              </nav>
-            </div>
+      <div class="post-content">
+        <!-- Portfolio Filter -->
+        <div class="portfolio">
+          <div class="categories-grid wow fadeInLeft">
+            <nav class="categories text-center">
+              <ul class="portfolio_filter">
+                <li><a href="" class="active" data-filter="*">All</a></li>
+                <li><a href="" data-filter=".hobby">Hobby</a></li>
+                <li><a href="" data-filter=".professional">Professional</a></li>
+                <li><a href="" data-filter=".software">Software</a></li>
+                <li><a href="" data-filter=".hardware">Hardware</a></li>
+              </ul>
+            </nav>
           </div>
-
-          <div class="container main-container clearfix">
-            <!-- ITEM START -->
-            <div class="no-padding portfolio_container clearfix">
-              <div class="col-md-3 col-sm-6 hobby software hardware" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
-                <div class="portfolio_item_hover">
-                  <div class="portfolio-border clearfix">
-                    <div class="item_info">
-                      <img class="card-img-top" src="projects/rpi-ws/thumbnail.png" />
-                      <h4 class="card-title cardTitle">RPIZW Web Server</h4>
-                      <p class="card-text">USB Interface Web Server</p>
-                      <a href="projects/rpi-ws/post.html" class="btn btn-primary">Click to View</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ITEM END -->
-
-              <!-- ITEM START -->
-              <div class="col-md-3 col-sm-6 professional software" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
-                <div class="portfolio_item_hover">
-                  <div class="portfolio-border clearfix">
-                    <div class="item_info">
-                      <img class="card-img-top" src="projects/ado-scripts/thumbnail.png" />
-                      <h4 class="card-title cardTitle">Azure DevOps</h4>
-                      <p class="card-text">Automated Scripts</p>
-                      <a href="projects/ado-scripts/post.html" class="btn btn-primary">Click to View</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- ITEM END -->
-            </div>
-          </div>
-          <!-- portfolio -->
         </div>
-        <!-- end portfolio div -->
-    </div>
-    <!-- end main container -->
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div class="container main-container clearfix">
+          <!-- ITEM START -->
+          <div class="no-padding portfolio_container clearfix">
+            <div class="col-md-3 col-sm-6 hobby software hardware"
+              style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+              <div class="portfolio_item_hover">
+                <div class="portfolio-border clearfix">
+                  <div class="item_info">
+                    <img class="card-img-top" src="projects/rpi-ws/thumbnail.png" />
+                    <h4 class="card-title cardTitle">RPIZW Web Server</h4>
+                    <p class="card-text">USB Interface Web Server</p>
+                    <a href="projects/rpi-ws/post.html" class="btn btn-primary">Click to View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM END -->
 
+            <!-- ITEM START -->
+            <div class="col-md-3 col-sm-6 professional software"
+              style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+              <div class="portfolio_item_hover">
+                <div class="portfolio-border clearfix">
+                  <div class="item_info">
+                    <img class="card-img-top" src="projects/ado-scripts/thumbnail.png" />
+                    <h4 class="card-title cardTitle">Azure DevOps</h4>
+                    <p class="card-text">Automated Scripts</p>
+                    <a href="projects/ado-scripts/post.html" class="btn btn-primary">Click to View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM END -->
 
-    </div>
-    </article>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 

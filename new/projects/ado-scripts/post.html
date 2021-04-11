@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Ngu-Software | Project Overview</title>
+                    <link rel="icon" href="../../img/fav.png" type="image/x-icon">
+                        </head>
+    <body>
+        <div class="container main-container">
+            <center><a href="../../index.html">Home</a> / <a href="../../portfolio.html">Portfolio</a> / Azure DevOps</center>
+            <br>
+            <hr>
+            <div class="col-md-12">
+                <img src="banner.jpg" class="img-responsive" />
+                <div class="h-30"></div>
+            </div>
+            <div class="col-md-12">
+                <h3 class="text-uppercase">Azure DevOps</h3>
+                <h5>Automated Scripts</h5>
+                <div class="h-30"></div>
+            </div>
+            <div class="col-md-9">
+                
+                <h4>Summary</h4>
+                <p>During my rotation into the Release Management team at General Motors, I had the opportunity to work with Azure DevOps (formerly Team Foundation Server). ADO is a very powerful platform but it was very underutilized due to the corporate policies that prevented the use of open source plugins/extensions.<br><br>
+                
+                I worked on a suite of scripts that improved efficiency, development team flow, and automated tasks. These scripts included:
+                <ul>
+                    <li><code>Build Info</code>: Manually passed build pipeline variables via JSON file through the drop folder. This was done manually since GM corporate policy prevented the use of plugins that would do this for us.</li>
+                    <li><code>JKS Certificate Expiration</code>: Build pipeline script that failed builds and notified dev teams (scheduled on a weekly cadence) if any dev/prod JKS files were expired.</li>
+                    <li><code>Branch Merge Automation</code>: Release pipeline script that merged Release branches into Prod/Master and back into Develop after the successful push to 3 production environment servers. This saved a lot of time for development team leads and promoted proper git flow/hygiene.</li>
+                    <li><code>Git Release Branch Hygiene</code>: As part of the Branch Merge Automation scripts- an additional script was created as a monitoring tool when release branches had commits pushed into them. This metric dashboard was created because proper git hygiene was not followed so teams were able to monitor which project and which branch was not following proper git flow.</li>
+                    <li><code>Blue/Green Deployment</code>: These were suite of release pipeline scripts that would perform the blue/green deployments into the PCF spaces (specified in project manifest.yml files). More so- these scripts were overhauled as the previous ones were hardcoded and did not allow us to scale easily.</li>
+                    <li><code>PCF Redeployment Automation</code>: As part of maintaining the PCF (Pivotal Cloud Foundary) space, redeployments were required within 30-45 days from release. This script would push the latest release/build numbers onto a markdown page to be used for data entry for our redeployments.</li>
+                    <li><code>Redeployment Verification</code>: Part of releasing enterprise applications is validating that the applications we pushed to production servers were operating properly. This script hit every health actuator endpoint on every microservice and notified which apps were online/offline. This was created so that the release management team would no longer need to wait on dev team leads to verify.</li>
+                </ul><br>
+            </div>
+            
+            <!--     Sidebar Info       -->
+            <div class="col-md-3">
+                <h4>Information</h4>
+                <ul class="cat-ul">
+                    <li><i class="ion-ios-circle-filled"></i><b>Date:</b>: 02/20/2021</li>
+                    <li><i class="ion-ios-circle-filled"></i><b>Language</b>: Powershell, Bash</li>
+                    <li><i class="ion-ios-circle-filled"></i><b>Services</b>: ADO/TFS</li>
+                </ul>
+                <div class="h-10"></div>
+                <h4>Project link</h4>
+                <ul class="cat-ul">
+                    <li><i class="ion-email"></i><a href="../../contact.php">via Github</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <!-- footer -->
+        <footer>
+            <div class="container-fluid">
+                <p class="copyright">© Jimmy Nguyen</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </body>
+</html>
+
+<!-- jQuery -->
+<script src="../../js/jquery-2.1.1.js"></script>
+<!--  plugins -->
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/animated-headline.js"></script>
+<script src="../../js/isotope.pkgd.min.js"></script>
+
+
+<!--  custom script -->
+<script src="../../js/custom.js"></script>
+
+<!-- Bootstrap -->
+<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+<link href="../../ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+<!-- main css -->
+<link href="../../css/style.css" rel="stylesheet" />
+
+<!-- modernizr -->
+<script src="../../js/modernizr.js"></script>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+<!-- end Preloader -->

@@ -167,6 +167,7 @@
       width:1170px
   }
 }
+
 .btn{
   display:inline-block;
   padding:6px 12px;
@@ -224,6 +225,20 @@
 .btn-primary .badge{
   color:#337ab7;
   background-color:#fff
+}
+
+a{
+  text-decoration:none
+}
+a:focus,a:hover{
+  text-decoration:none
+}
+a:focus{
+  outline:thin dotted;
+  outline-offset:-2px
+}
+a:visited {
+  color: white;
 }
 
 h4{
