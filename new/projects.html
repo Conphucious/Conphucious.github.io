@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimmy Nguyen</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/custom.js"></script>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <div class="site-title">Jimmy Nguyen</div>
+      <nav class="site-nav">
+        <div class="trigger">
+          <a class="page-link" href="index.html">Homepage</a>
+          <a class="page-link" href="projects.html">Projects</a>
+          <a class="page-link" href="about.html">Experience</a>
+          <a class="page-link" href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">Projects</h1>
+        </header>
+
+        <div class="post-content">
+          <!-- Portfolio Filter -->
+          <div class="portfolio">
+            <div class="categories-grid wow fadeInLeft">
+              <nav class="categories text-center">
+                <ul class="portfolio_filter">
+                  <li><a href="" class="active" data-filter="*">All</a></li>
+                  <li><a href="" data-filter=".hobby">Hobby</a></li>
+                  <li><a href="" data-filter=".professional">Professional</a></li>
+                  <li><a href="" data-filter=".software">Software</a></li>
+                  <li><a href="" data-filter=".hardware">Hardware</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="container main-container clearfix">
+            <!-- ITEM START -->
+            <div class="no-padding portfolio_container clearfix">
+              <div class="col-md-3 col-sm-6 hobby software hardware" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+                <div class="portfolio_item_hover">
+                  <div class="portfolio-border clearfix">
+                    <div class="item_info">
+                      <img class="card-img-top" src="projects/rpi-ws/thumbnail.png" />
+                      <h4 class="card-title cardTitle">RPIZW Web Server</h4>
+                      <p class="card-text">USB Interface Web Server</p>
+                      <a href="projects/rpi-ws/post.html" class="btn btn-primary">Click to View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM END -->
+
+              <!-- ITEM START -->
+              <div class="col-md-3 col-sm-6 professional software" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+                <div class="portfolio_item_hover">
+                  <div class="portfolio-border clearfix">
+                    <div class="item_info">
+                      <img class="card-img-top" src="projects/ado-scripts/thumbnail.png" />
+                      <h4 class="card-title cardTitle">Azure DevOps</h4>
+                      <p class="card-text">Automated Scripts</p>
+                      <a href="projects/ado-scripts/post.html" class="btn btn-primary">Click to View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM END -->
+            </div>
+          </div>
+          <!-- portfolio -->
+        </div>
+        <!-- end portfolio div -->
+    </div>
+    <!-- end main container -->
+
+
+    </div>
+    </article>
+    </div>
+  </main>
+
+  <footer class="site-footer h-card">
+    <div class="footer-text">© 2021 </div>
+  </footer>
+</body>
+
+</html>
